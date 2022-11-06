@@ -149,7 +149,7 @@ class App extends Component {
 
   onButtonSubmit = () => {
     this.setState({ imageUrl: this.state.input });
-    fetch("https://stormy-tundra-88441.herokuapp.com/imageUrl", {
+    fetch("https://salty-bayou-60054.herokuapp.com/imageUrl", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -160,7 +160,7 @@ class App extends Component {
 
       .then((response) => {
         if (response) {
-          fetch("https://stormy-tundra-88441.herokuapp.com/image", {
+          fetch("https://salty-bayou-60054.herokuapp.com/image", {
             method: "put",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
