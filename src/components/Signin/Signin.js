@@ -9,6 +9,7 @@ class Signin extends React.Component {
     };
   }
 
+<<<<<<< HEAD
   onEmailChange = (event) => {
     this.setState({ signInEmail: event.target.value });
   };
@@ -27,6 +28,26 @@ class Signin extends React.Component {
       .then((response) => response.json())
       .then((user) => {
         if (user.id) {
+=======
+
+  onEmailChange = (event) =>{
+    this.setState({signInEmail : event.target.value})
+  }
+  onPasswordChange = (event) =>{
+    this.setState({signInPassword: event.target.value})
+  }
+  onSubmitSignIn = () =>{
+   fetch('https://salty-bayou-60054.herokuapp.com/signin',{
+     method: 'post',
+     headers: {'Content-Type': 'application/json'},
+     body: JSON.stringify({
+       email: this.state.signInEmail,
+       password: this.state.signInPassword
+     })
+   }).then(response => response.json())
+      .then(user => {
+        if(user.id){
+>>>>>>> 3ec1495d293f0964ca8fb6e66fb62c6123331cf9
           this.props.loadUser(user);
           this.props.onRouteChange("home");
         }

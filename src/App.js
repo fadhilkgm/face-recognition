@@ -149,7 +149,7 @@ class App extends Component {
   onButtonSubmit = () => {
     document.getElementById("hero-image").style.visibility="hidden"
     this.setState({ imageUrl: this.state.input });
-    fetch("https://salty-bayou-60054.herokuapp.com/imageurl", {
+    fetch("https://salty-bayou-60054.herokuapp.com/imageUrl", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
