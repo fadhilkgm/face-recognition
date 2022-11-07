@@ -1,9 +1,13 @@
-.Tilt{
-    background: linear-gradient(89deg, #d821b4 0%, #23cde0 100%);
+.Tilt {
+  background: linear-gradient(-300deg, #2f5cff 30%, #dbf4ff 100%);
 }
-@media screen and (max-widht:700px) {
-    .pa3{
-        max-width: 80px;
-        height: auto;
-    }
+.logo-container {
+  margin: 30px;
+  margin-top: -80px;
+}
+@media screen and (max-widht: 700px) {
+  .pa3 {
+    max-width: 80px;
+    height: auto;
+  }
 }

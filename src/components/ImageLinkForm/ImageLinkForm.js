@@ -1,24 +1,40 @@
-import React from 'react';
-import './ImageLinkForm.css'
+import React from "react";
+import "./ImageLinkForm.css";
+import { ReactComponent as ReactLogo } from "../../assets/upload.svg";
+import { ReactComponent as HeroImg } from "../../assets/hero.svg";
 
+const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
+  return (
+    <div>
+      <h1 className="heading">Detect Faces in an image by AI</h1>
+      <div id="hero-image">
+        <HeroImg className="hero-svg" />
+      </div>
 
-const ImageLinkForm = ({ onInputChange,onButtonSubmit }) => {
-    return (
-        <div>
-            <p className='f3'>
-                {'this magic brain will detect faces in your images'}
-            </p>
-            <div className='center'>
-            <div className='form center pa4 br3 shadow-5'>
-                <input type='text' className='f4 pa2 w-70 center' onChange={onInputChange} />
-                <button className='w-30 grow f4 link ph3 pv2 dib white bg-light-purple' onClick={onButtonSubmit}>Detect</button>
-            </div>
-            </div>
+      <p className="f3"></p>
+      <div className="container">
+        <div className="form  pa4 br3 shadow-5">
+          <input
+            type="text"
+            className="input-space"
+            onChange={onInputChange}
+            placeholder="Paste Your link here"
+          />
+          <button className="detect btn" onClick={onButtonSubmit}>
+            Detect
+          </button>
+          <label>
+            <input
+              className="upload btn"
+              type="button"
+              value={`Upload Image`}
+            />
+            <ReactLogo className="svg" />
+          </label>
         </div>
-    
-    );
+      </div>
+    </div>
+  );
 };
-
-
 
 export default ImageLinkForm;

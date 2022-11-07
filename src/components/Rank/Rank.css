@@ -1,0 +1,10 @@
+.white {
+  position: relative;
+  width: 30%;
+  right: -60%;
+  display: iniline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 25px;
+}
