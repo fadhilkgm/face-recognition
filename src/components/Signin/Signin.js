@@ -36,17 +36,17 @@ class Signin extends React.Component {
   render() {
     const { onRouteChange } = this.props;
     return (
-      <article className="br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
-        <main className="pa4 black-80">
+      <article className="br4 ba b--black-10 mv4 w-100 w-0-m w-25-l mw6 shadow-5 center" style={{background: '#00b3dbba'}}>
+        <main className="pa4">
           <div className="measure">
             <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
-              <legend className="f1 fw6 ph0 mh0">Sign In</legend>
+              <legend className="f1 fw6 ph0 mh0 mv2" style={{color: '#fff'}} >Sign In</legend>
               <div className="mt3">
-                <label className="db fw6 lh-copy f6" htmlFor="email-address">
+                <label className="db fw6 lh-copy f5 mv3" htmlFor="email-address" style={{color: '#fff'}}>
                   Email
                 </label>
                 <input
-                  className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+                  className="pa3 br4 input-reset ba bg-transparent hover-bg-black hover-white w-100"
                   type="email"
                   name="email-address"
                   id="email-address"
@@ -54,11 +54,11 @@ class Signin extends React.Component {
                 />
               </div>
               <div className="mv3">
-                <label className="db fw6 lh-copy f6" htmlFor="password">
+                <label className="db fw6 lh-copy f5 mv3" style={{color: '#fff'}} htmlFor="password">
                   Password
                 </label>
                 <input
-                  className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+                  className="b br4 pa3 input-reset ba bg-transparent hover-bg-black hover-white w-100"
                   type="password"
                   name="password"
                   id="password"
@@ -69,7 +69,7 @@ class Signin extends React.Component {
             <div className="">
               <input
                 onClick={this.onSubmitSignIn}
-                className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
+                className="b input-reset  bg-transparent grow pointer f5 dib navlink pl4 pr4 pv3"
                 type="submit"
                 value="Sign in"
               />
@@ -77,7 +77,7 @@ class Signin extends React.Component {
             <div className="lh-copy mt3">
               <p
                 onClick={() => onRouteChange("register")}
-                className="f6 link dim black db pointer"
+                className="f5 link dim  db pointer" style={{color: '#fff'}}
               >
                 Register
               </p>

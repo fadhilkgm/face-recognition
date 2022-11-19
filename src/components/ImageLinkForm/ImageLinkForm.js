@@ -1,6 +1,6 @@
 import React from "react";
 import "./ImageLinkForm.css";
-import { ReactComponent as ReactLogo } from "../../assets/upload.svg";
+// import { ReactComponent as ReactLogo } from "../../assets/upload.svg";
 import { ReactComponent as HeroImg } from "../../assets/hero.svg";
 
 const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
@@ -23,14 +23,14 @@ const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
           <button className="detect btn" onClick={onButtonSubmit}>
             Detect
           </button>
-          <label>
+          {/* <label>
             <input
               className="upload btn"
               type="button"
               value={`Upload Image`}
             />
             <ReactLogo className="svg" />
-          </label>
+          </label> */}
         </div>
       </div>
     </div>

@@ -147,7 +147,7 @@ class App extends Component {
   };
 
   onButtonSubmit = () => {
-    document.getElementById("hero-image").style.visibility="hidden"
+    document.getElementById("hero-image").style.visibility = "hidden";
     this.setState({ imageUrl: this.state.input });
     fetch("https://salty-bayou-60054.herokuapp.com/imageUrl", {
       method: "post",
@@ -185,7 +185,6 @@ class App extends Component {
     }
     this.setState({ route: route });
   };
-  
 
   render() {
     const { isSignedIn, imageUrl, route, boxes } = this.state;
@@ -203,6 +202,15 @@ class App extends Component {
           onRouteChange={this.onRouteChange}
         />
         <Logo />
+        {/* <div>
+          <Rank name={this.state.user.name} entries={this.state.user.entries} />
+          <ImageLinkForm
+            onInputChange={this.onInputChange}
+            onButtonSubmit={this.onButtonSubmit}
+          />
+          <FaceRecognition boxes={boxes} imageUrl={imageUrl} />
+        </div> */}
+
         {route === "home" ? (
           <div>
             
@@ -227,8 +235,6 @@ class App extends Component {
             onRouteChange={this.onRouteChange}
           />
         )}
-    
-
       </div>
     );
   }
