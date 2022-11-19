@@ -40,7 +40,7 @@ class Signin extends React.Component {
         <main className="pa4">
           <div className="measure">
             <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
-              <legend className="f1 fw6 ph0 mh0 mv2" style={{color: '#fff'}} >Sign In</legend>
+              <legend className="f1 fw6 ph0 mh0 mv2">Sign In</legend>
               <div className="mt3">
                 <label className="db fw6 lh-copy f5 mv3" htmlFor="email-address" style={{color: '#fff'}}>
                   Email
@@ -77,7 +77,7 @@ class Signin extends React.Component {
             <div className="lh-copy mt3">
               <p
                 onClick={() => onRouteChange("register")}
-                className="f5 link dim  db pointer" style={{color: '#fff'}}
+                className="f5 link dim  db pointer" 
               >
                 Register
               </p>

@@ -20,7 +20,7 @@ const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
             onChange={onInputChange}
             placeholder="Paste Your link here"
           />
-          <button className="detect btn" onClick={onButtonSubmit}>
+          <button className="detect btn grow" onClick={onButtonSubmit}>
             Detect
           </button>
           {/* <label>
